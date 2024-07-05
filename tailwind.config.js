@@ -1,11 +1,16 @@
+// tailwind.config.js
 module.exports = {
+    purge: [],
+    darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-            width: {
-                '550': '550px',
+            fontFamily: {
+                'roboto': ['Roboto', 'sans-serif'],
             },
         },
     },
-    variants: {},
+    variants: {
+        extend: {},
+    },
     plugins: [],
 }

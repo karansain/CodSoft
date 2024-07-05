@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-    * {
-        font-family: "Roboto", sans-serif;
-
-    }
 
     .checkbox-list {
         padding: 20px;
@@ -92,7 +87,7 @@
 </style>
 
 
-<body class="bg-black">
+<body class="bg-black font-roboto">
 
     <div class="container min-h-screen max-w-screen-2xl mx-auto px-4 sm:p-0">
         <nav class="flex flex-col sm:flex-row items-center justify-between pl-4 pr-4 py-5 sm:pl-20 sm:pr-20">
@@ -102,32 +97,38 @@
                 </div>
                 <div class="block sm:hidden">
                     <button id="menu-button" class="text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
             <div id="menu" class="flex-col sm:flex-row items-center hidden sm:flex">
                 <ul class="flex flex-col sm:flex-row items-center">
-                    <li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Home</li>
-                    <li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Registration</li>
-                    <li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Service</li>
-                    <li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Training</li>
-                    <li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Contact</li>
+                    <a href="#hero"><li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Home</li></a>
+                    <a href="#feature"><li class="list-none inline-block px-5 text-red-600 text-xl font-bold">About</li></a>
+                    <a href="#trainers"><li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Experts</li></a>
+                    <a href="#servire"><li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Service</li></a>
+                    <a href="#review"><li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Review</li></a>
+                    <a href="#register"><li class="list-none inline-block px-5 text-red-600 text-xl font-bold">Registration</li></a>
                 </ul>
-                <button class="h-10 w-24 ml-4 mt-2 rounded-lg bg-gradient-to-r from-red-500 to-orange-600 sm:mt-0 sm:ml-5">Contact Us</button>
+                <button onclick="location.href = '#contact'"
+                    class="h-10 w-24 ml-4 mt-2 rounded-lg bg-gradient-to-r from-red-500 to-orange-600 sm:mt-0 sm:ml-5">Contact
+                    Us</button>
             </div>
         </nav>
 
 
-        <section class="flex flex-col sm:flex-row items-center justify-center mt-5">
+        <section class="flex flex-col sm:flex-row items-center justify-center mt-5" id="hero">
             <div
                 class="flex flex-col text-center sm:text-right sm:mr-5 items-center sm:items-end justify-center w-full sm:w-[550px] h-auto sm:h-[500px]">
                 <h3 class="text-red-600 text-2xl font-bold">SINCE-2024</h3>
                 <h1 class="text-gray-400 text-5xl font-bold">MAKE YOUR BODY SHAPE <br> WITH US</h1>
-                <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore voluptatum
-                    modi, corrupti, architecto ullam minima libero cumque</p>
+                <p class="text-gray-500">Welcome to Iron Forge Fitness, your ultimate destination for fitness and health.
+                    Join us and transform your body, mind, and spirit with our state-of-the-art facilities and expert
+                    trainers.</p>
             </div>
             <div class="w-full sm:w-[550px] h-auto sm:h-[500px]">
                 <img class="w-full sm:w-[550px] h-auto sm:h-[500px] object-cover" src="./assets/images/heroImg.jpeg"
@@ -138,11 +139,11 @@
 
 
         <center>
-            <h1 class=" mt-24 font-bold text-red-600 text-4xl">Features</h1>
+            <h1 class=" mt-24 font-bold text-red-600 text-4xl" id="feature">Features</h1>
         </center>
 
 
-        <section class="mt-12 flex flex-col sm:flex-row items-center justify-center">
+        <section class="mt-12 flex flex-col sm:flex-row items-center justify-center" >
             <img src="./assets/images/hero2.jpeg" alt="" class="w-64 h-auto sm:h-[550px] object-cover mb-4 sm:mb-0">
             <div class="sm:ml-5 h-auto sm:h-96 w-auto sm:w-96">
                 <h5 class="text-red-600">OUR BEST FEATURES</h5>
@@ -152,7 +153,7 @@
                         <div class="h-12 w-12 bg-slate-100 flex items-center justify-center m-2 rounded-md">
                             <img src="./assets/icons/report.png" alt="" class="h-10 w-10 bg-transparent">
                         </div>
-                        <h5 class="sc">PROGRESSION</h5>
+                        <h5 class="text-red-600">PROGRESSION</h5>
                         <p class="text-gray-400 text-xs">The greater part of progress is the desire to progress.</p>
                     </div>
                     <div class="2">
@@ -183,10 +184,10 @@
         </section>
 
         <center>
-            <h1 class=" mt-24 font-bold text-red-600 text-4xl">Expert Trainers</h1>
+            <h1 class=" mt-24 font-bold text-red-600 text-4xl" id="trainers">Expert Trainers</h1>
         </center>
 
-        <section class=" flex flex-col items-center justify-center sm:flex-row">
+        <section class=" flex flex-col items-center justify-center sm:flex-row" >
             <div class=" m-12 bg-slate-200 rounded-lg overflow-hidden w-72 text-center shadow-md">
                 <div class="bg-gradient-to-r from-red-500 to-orange-600 text-white p-1">
                     <h2>Karan Sain</h2>
@@ -232,10 +233,10 @@
         </section>
 
         <center>
-            <h1 class=" mt-24 font-bold text-red-600 text-4xl">Training Programs</h1>
+            <h1 class=" mt-24 font-bold text-red-600 text-4xl" id="Service">Training Programs</h1>
         </center>
 
-        <section class=" flex flex-col items-center justify-center sm:flex-row">
+        <section class=" flex flex-col items-center justify-center sm:flex-row" >
 
 
 
@@ -281,29 +282,29 @@
     </div>
 
 
-        <section class=" mt-12 h-24 sm:h-52 w-full bg-[#f9f9f951] flex flex-row justify-center items-center gap-12">
-            <div class=" bg-transparent h-24 w-24 sm:h-52 sm:w-52">
-                <img src="./assets/Sticker/body.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
-            </div>
-            <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
-                <img src="./assets/Sticker/crossfit.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
-            </div>
-            <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
-                <img src="./assets/Sticker/thegym.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
-            </div>
-            <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
-                <img src="./assets/Sticker/npng.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
-            </div>
-            <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
-                <img src="./assets/Sticker/sfh.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
-            </div>
+    <section class=" mt-12 h-24 sm:h-52 w-full bg-[#f9f9f951] flex flex-row justify-center items-center gap-12">
+        <div class=" bg-transparent h-24 w-24 sm:h-52 sm:w-52">
+            <img src="./assets/Sticker/body.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
+        </div>
+        <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
+            <img src="./assets/Sticker/crossfit.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
+        </div>
+        <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
+            <img src="./assets/Sticker/thegym.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
+        </div>
+        <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
+            <img src="./assets/Sticker/npng.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
+        </div>
+        <div class="bg-transparent h-24 w-24 sm:h-52 sm:w-52">
+            <img src="./assets/Sticker/sfh.png" alt="" class=" h-24 w-24 sm:h-52 sm:w-52">
+        </div>
 
-        </section>
+    </section>
 
 
-        <div class="container min-h-screen max-w-screen-2xl mx-auto px-4 sm:p-0">
+    <div class="container min-h-screen max-w-screen-2xl mx-auto px-4 sm:p-0" >
         <center>
-            <h1 class=" mt-24 font-bold text-red-600 text-4xl mb-14"> What Our Clients Say About US!</h1>
+            <h1 class=" mt-24 font-bold text-red-600 text-4xl mb-14" id="review"> What Our Clients Say About US!</h1>
         </center>
 
         <section class="review">
@@ -391,11 +392,11 @@
         </section>
 
         <center>
-            <h1 class=" mt-24 font-bold text-red-600 text-4xl mb-14">Registration Form</h1>
+            <h1 class=" mt-24 font-bold text-red-600 text-4xl mb-14" id="register">Registration Form</h1>
         </center>
 
 
-        <section class="flex justify-center items-center w-full">
+        <section class="flex justify-center items-center w-full" >
             <form id="contact-form" action="submit"
                 class="flex flex-col gap-5 w-[500px] p-5 border-2 border-red-500 rounded-lg">
                 <label class="text-red-500 text-lg font-bold" for="Name">Name</label>
@@ -435,17 +436,17 @@
             </form>
         </section>
     </div>
-        <center>
-            <h1 class=" mt-24 font-bold text-red-600 text-4xl">Contact US</h1>
-        </center>
+    <center>
+        <h1 class=" mt-24 font-bold text-red-600 text-4xl" id="contact">Contact US</h1>
+    </center>
 
-            <section class=" mb-28 bg-[#a0a0a021] mt-12 flex flex-col items-center w-full text-[#ff2222] text-sm">
-                <p>9636988473</p>
-                <p>karansain920@gmail.com</p>
-                <p>Sikar, Rajasthan</p>
-            </section>
+    <section class=" mb-28 bg-[#a0a0a021] mt-12 flex flex-col items-center w-full text-[#ff2222] text-sm" >
+        <p>9636988473</p>
+        <p>karansain920@gmail.com</p>
+        <p>Sikar, Rajasthan</p>
+    </section>
 
-    
+
 
     <script>
 
@@ -460,7 +461,7 @@
 
 
         (function () {
-            emailjs.init("YOUR_USER_ID"); 
+            emailjs.init("YOUR_USER_ID");
         })();
 
         document.getElementById('contact-form').addEventListener('submit', function (event) {
